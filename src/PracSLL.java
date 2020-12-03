@@ -49,6 +49,18 @@ public class PracSLL
         return count;
     }
 
+    public void setData(int oldData, int updateData)
+    {
+        Node position = head;
+        while(position != null)
+        {
+            if(position.getData() == oldData)
+            {
+                position.setData(updateData);
+            }
+            position = position.getLink();
+        }
+    }
 
     //to display the list
     public void showList()
