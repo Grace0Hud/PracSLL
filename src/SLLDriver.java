@@ -11,6 +11,7 @@ public class SLLDriver
 
         System.out.println("The list length is: " + mySLL.length());
 
+        mySLL.setData(25,8);
         mySLL.deleteNodeFromStart();
         mySLL.showList();
         System.out.println("The list length is: " + mySLL.length());
